@@ -1,0 +1,13 @@
+:root {
+    --iwscan-accent: #ff6f61;
+    --iwscan-bg: #003a62;
+
+    --md-default-bg-color: #0c0c0c;
+    --md-primary-fg-color: var(--iwscan-bg);
+    --md-accent-fg-color: var(--iwscan-accent);
+    --md-typeset-a-color: var(--iwscan-accent);
+}
+
+[data-md-color-scheme="default"] {
+    --md-typeset-a-color: var(--iwscan-accent);
+}

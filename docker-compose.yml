@@ -1,0 +1,8 @@
+services:
+  iw-docs:
+    image: sdtdocs
+    container_name: iw-sdtdocs
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./:/app

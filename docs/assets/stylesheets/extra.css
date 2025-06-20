@@ -1,0 +1,61 @@
+:root {
+  --md-admonition-icon--release: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>tag-outline</title><path d="M21.41 11.58L12.41 2.58A2 2 0 0 0 11 2H4A2 2 0 0 0 2 4V11A2 2 0 0 0 2.59 12.42L11.59 21.42A2 2 0 0 0 13 22A2 2 0 0 0 14.41 21.41L21.41 14.41A2 2 0 0 0 22 13A2 2 0 0 0 21.41 11.58M13 20L4 11V4H11L20 13M6.5 5A1.5 1.5 0 1 1 5 6.5A1.5 1.5 0 0 1 6.5 5Z" /></svg>')
+}
+
+.md-typeset .admonition.release,
+.md-typeset details.release {
+  border-color: rgb(64, 81, 181);
+  display: inline-block;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+.md-typeset .release>.admonition-title,
+.md-typeset .release>summary {
+  background-color: rgba(64, 81, 181, 0.1);
+  color: rgb(64, 81, 181);
+}
+
+.md-typeset .release>.admonition-title::before,
+.md-typeset .release>summary::before {
+  background-color: rgb(64, 81, 181);
+  -webkit-mask-image: var(--md-admonition-icon--release);
+  mask-image: var(--md-admonition-icon--release);
+}
+
+/* Change the site title color in the header */
+.md-header__title, .md-header__ellipsis {
+  color: #dfdada !important;
+  /* utex gold  #ac882e */
+}
+/* Change global font family */
+body, .md-typeset {
+  font-family: 'Helvetica','Segoe UI Semibold','Arial','sans-serif';
+  font-style: normal;   /* normal, italic, oblique */
+  font-weight: 400;     /* 100 to 900 */
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Helvetica','Segoe UI Semibold','Arial','sans-serif';
+  font-style: italic;
+  font-weight: 700;
+}
+
+h1 {
+  color: #003366; /* Dark blue for top-level headings */
+}
+
+h2 {
+  color: #0055aa; /* Slightly lighter blue */
+}
+
+.md-tabs__link {
+  color: #91410c; /* normal */
+}
+
+
+.md-nav__title {
+  color: #aa5200; /* Replace with your desired color */
+  font-weight: bold; /* Optional: make it stand out */
+  font-size: 0.75rem;   /* Adjust this value as needed */
+  font-weight: 600;     /* Optional: boldness */
+}

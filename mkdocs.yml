@@ -1,0 +1,106 @@
+site_name: InspectionWare File Formats
+site_url: https://sdt-3805dd.gitlab.io/
+site_dir: public
+copyright: Copyright &copy; 2025 UTEX Scientific Instruments Inc.
+
+theme:
+  name: material
+  custom_dir: docs/assets/overrides
+  features:
+    - navigation.instant
+    - navigation.instant.prefetch
+    - navigation.tracking
+    - navigation.sections
+    - toc.follow
+    - content.code.copy
+    - content.code.annotate
+  logo: assets/images/Logo/Tornado.png
+  favicon: assets/images/Logo/Tornado.png
+  palette:
+    primary: custom
+    accent: custom
+
+plugins:
+  - search
+  - mermaid2
+  - glightbox
+  - open-in-new-tab
+  - minify:
+      minify_html: true
+      minify_js: true
+      minify_css: true
+      htmlmin_opts:
+        remove_comments: true
+      cache_safe: true
+  - print-site:
+      add_to_navigation: false
+      print_page_title: "Printer Friendly Version"
+      enumerate_headings: false
+      add_print_site_banner: false
+      add_cover_page: true
+      cover_page_template: "docs/assets/templates/pdf_cover_page.tpl"
+      add_table_of_contents: true
+      toc_depth: 2
+ 
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:mermaid2.fence_mermaid_custom
+  - pymdownx.caret
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.tilde
+  - attr_list
+  - md_in_html
+  - def_list
+  - toc:
+      toc_depth: 3
+      permalink: "#"
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+extra_javascript:
+  # Katex
+  - https://cdn.jsdelivr.net/npm/katex@0/dist/katex.min.js
+  - https://cdn.jsdelivr.net/npm/katex@0/dist/contrib/auto-render.min.js
+  - assets/js/katex.js
+
+  # Google Analytics
+  - https://www.googletagmanager.com/gtag/js?id=G-7YRL783HP2
+  - assets/js/google-analytics.js
+
+extra_css:
+  # Katex
+  - assets/stylesheets/colors.css
+  - assets/stylesheets/extra.css
+  - https://cdn.jsdelivr.net/npm/katex@0/dist/katex.min.css
+
+
+extra:
+  generator: false
+
+nav:
+  - 'Overview': index.md
+  - SDT: 
+    - SDT Structure: SDT/sdt_index.md
+    - Code Samples: SDT/sample-code.md
+    - Sample Data Files: SDT/sample-data-files.md
+
+

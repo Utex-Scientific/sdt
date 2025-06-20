@@ -1,0 +1,29 @@
+pages:
+  image: docker:latest
+  services:
+    - name: docker:24.0.7-dind
+      alias: docker
+
+  variables:
+    DOCKER_HOST: tcp://docker:2375
+    DOCKER_TLS_CERTDIR: ""  # Disable TLS to simplify setup
+    DOCKER_DRIVER: overlay2
+  script:
+    - docker build -t iwh5docs .
+    - docker run -d --name docs_container -v $CI_PROJECT_DIR/public:/app/public iwh5docs tail -f /dev/null
+    - docker exec docs_container mkdocs build --site-dir public
+    - docker exec docs_container mkdocs serve &
+    - sleep 7
+    - docker exec docs_container python3 print_pdf.py
+
+  artifacts:
+    paths:
+      - public
+
+  rules:
+    - if: $CI_PIPELINE_SOURCE == "push" && $CI_COMMIT_BRANCH == "main"
+      when: always
+    - when: never
+
+  tags:
+    - gitlab-org-docker
