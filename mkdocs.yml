@@ -98,7 +98,7 @@ extra:
 
 nav:
   - SDT:
-    - Home: SDT/sdt_index.md
+    - Home: index.md
     - Code Samples: SDT/sample-code.md
     - Sample Data Files: SDT/sample-data-files.md
 
