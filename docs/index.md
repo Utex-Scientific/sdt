@@ -4,5 +4,5 @@ SDT defines how ultrasonic and inspection signals are formatted and stored, ensu
 
 <figure markdown>
 <figcaption>SDT Data File Structure</figcaption>
-![SDT Data File Structure](../assets/images/Graphics/sdt_structure.png){ width="800" }
+![SDT Data File Structure](assets/images/Graphics/sdt_structure.png){ width="800" }
 </figure>
