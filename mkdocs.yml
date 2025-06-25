@@ -97,9 +97,8 @@ extra:
   generator: false
 
 nav:
-  - SDT:
-    - Home: index.md
-    - Code Samples: SDT/sample-code.md
-    - Sample Data Files: SDT/sample-data-files.md
+  - Home: index.md
+  - Code Samples: SDT/sample-code.md
+  - Sample Data Files: SDT/sample-data-files.md
 
 
