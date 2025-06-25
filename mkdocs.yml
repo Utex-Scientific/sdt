@@ -98,8 +98,7 @@ extra:
 
 nav:
   - SDT:
-    - Home: index.md
-    - SDT Structure: SDT/sdt_index.md
+    - Home: SDT/sdt_index.md
     - Code Samples: SDT/sample-code.md
     - Sample Data Files: SDT/sample-data-files.md
 
