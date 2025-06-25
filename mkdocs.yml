@@ -1,4 +1,4 @@
-site_name: InspectionWare File Format SDT
+site_name: InspectionWare File Format - SDT
 site_url: https://sdt-3805dd.gitlab.io/
 site_dir: public
 copyright: Copyright &copy; 2025 UTEX Scientific Instruments Inc.
@@ -97,8 +97,8 @@ extra:
   generator: false
 
 nav:
-  - 'Overview': index.md
-  - SDT: 
+  - SDT:
+    - Home: index.md
     - SDT Structure: SDT/sdt_index.md
     - Code Samples: SDT/sample-code.md
     - Sample Data Files: SDT/sample-data-files.md

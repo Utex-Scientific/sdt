@@ -1,6 +1,4 @@
-**From Utex Cloud –**  
-- Get the Sample data files  
-- Get the python code (`read_iwh5.py`)  
-  [https://cloud.utex.com/url/iwh5](https://cloud.utex.com/url/file-formats)
+# Data Files
 
-  [Download Example SDT](SDT/C_SCANAT.SDT)
+[Email Support @ UTEX](mailto:tech-support@utex.com) for sample `.sdt` sample files
+

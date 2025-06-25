@@ -34,18 +34,30 @@ body, .md-typeset {
   font-style: normal;   /* normal, italic, oblique */
   font-weight: 400;     /* 100 to 900 */
 }
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Helvetica','Segoe UI Semibold','Arial','sans-serif';
+body, .md-typeset {
+  font-size: 0.7rem; /* or 1rem */
+}
+
+.md-typeset h1 {
   font-style: italic;
-  font-weight: 700;
+  font-size: 1rem;
+  color: #003366;
 }
 
-h1 {
-  color: #003366; /* Dark blue for top-level headings */
+.md-typeset h2 {
+  font-style: normal;
+  font-weight: 400 !important;
+  font-size: 0.85rem;
+  color: #222223;
 }
 
-h2 {
-  color: #0055aa; /* Slightly lighter blue */
+.md-typeset h3,
+.md-typeset h4, .md-typeset h5,
+.md-typeset h6 {
+  font-style: normal;
+  font-weight: 400 !important;
+  font-size: 0.65rem;
+  color: #222223;
 }
 
 .md-tabs__link {
@@ -54,8 +66,9 @@ h2 {
 
 
 .md-nav__title {
-  color: #aa5200; /* Replace with your desired color */
-  font-weight: bold; /* Optional: make it stand out */
-  font-size: 0.75rem;   /* Adjust this value as needed */
+  color: #ac882e; /* Replace with your desired color */
+  /*font-weight: bold;  Optional: make it stand out */
+  font-size: 0.0rem;   /* Adjust this value as needed */
   font-weight: 600;     /* Optional: boldness */
 }
+
