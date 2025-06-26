@@ -39,19 +39,24 @@ body, .md-typeset {
 }
 
 .md-typeset h1 {
-  font-style: italic;
+  font-style: normal;
   font-size: 1rem;
   color: #003366;
 }
 
 .md-typeset h2 {
-  font-style: normal;
+  font-style: italic;
   font-weight: 400 !important;
   font-size: 0.85rem;
   color: #222223;
 }
+.md-typeset h3 {
+  font-style: normal;
+  font-weight: 250 !important;
+  font-size: 0.75rem;
+  color: #222223;
+}
 
-.md-typeset h3,
 .md-typeset h4, .md-typeset h5,
 .md-typeset h6 {
   font-style: normal;

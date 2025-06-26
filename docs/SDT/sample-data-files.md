@@ -1,4 +1,3 @@
 # Data Files
 
-[Email Support @ UTEX](mailto:tech-support@utex.com) for sample `.sdt` sample files
-
+[Link](https://support.utex.com/webapps/utexsupport.nsf/wPages/MSZI-DHYQUW2924?Open) for sample `.sdt` sample files
